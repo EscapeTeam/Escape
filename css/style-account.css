@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Utility*/
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    color: #222;
+    background: #bbb;
+    padding: 13px 18px;
+    border: none;
+}
+.btn:hover {
+    background: #ff6b3d;
+    color: #222;
+}
+
+.btn-light {
+    background:#bbb;
+    color: #222
+}
+.text-center {
+    text-align: center;
+}
+.btnlogin {
+  background:#999;
+  color: #222;
+}
+/*Header*/
+#navbar {
+  background: #222;
+  height: 58px;
+}
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.3rem;
+}
+#navbar .container ul {
+  display: flex;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+#navbar .container ul li {
+  list-style: none;
+  padding-right: 0.6rem;
+}
+#navbar .container ul li a {
+  padding: 20px;
+  display: block;
+}
+#navbar .container ul li input {
+  padding: 5px;
+  width: 170px;
+  display: block;
+  background: #bbb;
+  border: 1px black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar .container ul li button {
+  width: 60px;
+  padding: 4px;
+  display: block;
+  background: #bbb;
+  }
+#navbar .container h1 {
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+  padding-top: 0.7rem;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #333;
+  color: #ff6b3d;
+}
+
+/*Section1*/
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    background: url('../img/01-escape-room-the-cube-2.jpg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+}
+#showcase .container h1 {
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    }
+#showcase .container p {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    }
+.color-primary {
+    color: #ff6b3d;
+}
+
+/*Section2*/
+#showcase2 .container {
+    display: flex;
+    height: 350px;
+}
+#showcase2 .container .image {
+    background: url('../img/escape-room-magenta-key.jpg') no-repeat center center/cover;
+    flex: 1;
+}
+#showcase2 .container .section-text {
+    display:flex;
+    flex: 1;
+    background: black;
+    color: blanchedalmond;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-primary {
+    color: #ff6b3d;
+    }
+
+#showcase2 .container .section-text h1 {
+    padding-bottom: 20px;
+}
+#showcase2 .container .section-text p {
+    padding-bottom: 20px;
+}
+
+/*Section3*/
+#showcase3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.box-black {
+    background: black;
+    color: #bbb;
+}
+.box-white {
+    background: #ff6b3d;
+}
+.box {
+    flex: 1;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#showcase3 h3 {
+    padding-bottom: 30px;
+}
+
+/*Footer*/
+#footer {
+    background: #222;
+    padding: 7px;
+    color: white;
+    text-align: center;
+}
