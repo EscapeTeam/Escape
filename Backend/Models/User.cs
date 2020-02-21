@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using Microsoft.AspNetCore.Identity;
 
 namespace Escape.Backend.Models
 {
@@ -15,8 +17,9 @@ namespace Escape.Backend.Models
         public byte[] PasswordSalt { get; set; }
         public DateTime LastLogin { get; set; }
         public List<UserTeam> UserTeams { get; set; }
-        public List<RoomReview> Reviews {get; set;}
-        public UserProfile Profile {get; set;}
-
+        public List<RoomReview> Reviews { get; set; }
+        public UserProfile Profile { get; set; }
+        public IdentityUser UserIdentity {get; set;}
+        public string UserIdentityId { get; set; }
     }
 }

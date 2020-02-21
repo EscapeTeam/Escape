@@ -1,7 +1,8 @@
 ﻿using Escape.Backend.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Escape.Backend.Data
+namespace Escape.Backend.DbData
 {
     public class ApplicationDbContext : DbContext
     {
@@ -29,6 +30,8 @@ namespace Escape.Backend.Data
 
                 user.HasOne(u => u.Profile)
                     .WithOne(p => p.User);
+
+                user.HasOne(u => u.UserIdentity).WithOne();
             });
 
             modelBuilder.Entity<Team>(team =>
@@ -62,7 +65,6 @@ namespace Escape.Backend.Data
                   p.UserId, p.TeamId
                 });
             });
-
         }
     }
 
