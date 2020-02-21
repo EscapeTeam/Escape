@@ -1,14 +1,19 @@
 ﻿using Escape.Backend.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace Escape.Backend.DbData
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        private readonly IConfiguration _configuration;
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration)
           : base(options)
-        { }
+        {
+            _configuration = configuration;
+        }
 
         public DbSet<User> Users { get; set; }
         public DbSet<PlayedRoom> PlayedRoom { get; set; }
@@ -45,26 +50,34 @@ namespace Escape.Backend.DbData
             modelBuilder.Entity<UserProfile>(profile =>
             {
                 profile.HasKey(p => new
-                { 
-                  p.UserProfileId, p.UserId
+                {
+                    p.UserProfileId,
+                    p.UserId
                 });
             });
 
             modelBuilder.Entity<PlayedRoom>(playedRoom =>
             {
                 playedRoom.HasKey(p => new
-                { 
-                  p.RoomId, p.TeamId
+                {
+                    p.RoomId,
+                    p.TeamId
                 });
             });
 
             modelBuilder.Entity<UserTeam>(userTeam =>
             {
                 userTeam.HasKey(p => new
-                { 
-                  p.UserId, p.TeamId
+                {
+                    p.UserId,
+                    p.TeamId
                 });
             });
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
         }
     }
 

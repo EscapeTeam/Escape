@@ -77,6 +77,7 @@ namespace Backend.Areas.Identity.Pages.Account
             {
                 IdentityUser user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 User dataUser = new User { Email = Input.Email, UserIdentity = user, UserIdentityId = user.Id };
+                
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

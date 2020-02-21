@@ -29,6 +29,7 @@ namespace Escape.Backend
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             // services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             //     .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
@@ -54,8 +55,8 @@ namespace Escape.Backend
 
             services.ConfigureApplicationCookie(options =>
             {
-                    // Cookie settings
-                    options.Cookie.HttpOnly = true;
+                // Cookie settings
+                options.Cookie.HttpOnly = true;
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
 
                 options.LoginPath = "/Identity/Account/Login";

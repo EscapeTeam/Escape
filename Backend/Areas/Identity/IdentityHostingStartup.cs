@@ -17,7 +17,7 @@ namespace Escape.Backend.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<Identity.Data.BackendIdentityDbContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("BackendIdentityDbContextConnection")));
+                        context.Configuration.GetConnectionString("DefaultAuthConnection")));
 
                 services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                     .AddEntityFrameworkStores<BackendIdentityDbContext>();
