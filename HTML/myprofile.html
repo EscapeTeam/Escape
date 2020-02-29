@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE! Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-myprofile.css">
+    <script src="https://kit.fontawesome.com/7eaa6bd131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--NAVBAR-->
+
+    <section>
+      <nav class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">ESCAPE!</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-user"></i>Profilo<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Messaggi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i>Altro</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#create-team">Crea nuovo Team</a>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#create-match">Crea Match</a>
+                  <a class="dropdown-item" href="#">La mia rete di Escapers</a>
+                  <a class="dropdown-item" href="#">Eventi</a>
+                  <a class="dropdown-item" href="#">Associazioni</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+  <!--CREATE TEAM-->
+  <div class="modal fade" id="create-team" tabindex="-1" role="dialog" aria-labelledby="create-teamTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Crea un nuovo Team!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-5"><h6>Dai un nome al Team!</h6></div>
+              <div class="col-sm-7 ml-auto"><h6><input type="text" placeholder="Nome Team"></h6></div>
+            </div> 
+          <div class="row">
+            <div class="col-sm-5"><h6>Dove si trova il team?</h6></div>
+            <div class="col-sm-7 ml-auto"><h6><input type="text" placeholder="Città"></h6></div>
+          </div> 
+      </div> 
+    </div> 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Indietro</button>
+          <button type="button" class="btn btn-outline-orange2">Crea</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--CREATE MATCH-->
+<div class="modal fade" id="create-match" tabindex="-1" role="dialog" aria-labelledby="create-matchTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLongTitle">Crea un nuovo Match!</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-5"><h6>Dove?</h6></div>
+        <div class="col-sm-7 ml-auto"><h6><input type="text" placeholder="Città"></h6></div>
+      </div> 
+    <div class="row">
+      <div class="col-sm-5"><h6>Che Associazione?</h6></div>
+      <div class="col-sm-7 ml-auto"><h6><input type="text" placeholder="Nome Associazione"></h6></div>
+    </div> 
+  <div class="row">
+    <div class="col-sm-5"><h6>Quale Room?</h6></div>
+    <div class="col-sm-7 ml-auto"><h6><input type="text" placeholder="Nome della Room"></h6></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5"><h6>Numero Escapers:</h6></div>
+    <div class="col-sm-7 ml-auto"><h6><input type="number" min="2" max="12"></h6></div>
+  </div>
+</div> 
+</div> 
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-outline-orange2">Save changes</button>
+  </div>
+</div>
+</div>
+</div>
+
+    <!--PROFILE PART1-->
+   <section class="overview-profile">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+          <div id="header" class="primary-colors">
+            <div class="profile-pic"></div>
+            <div class="profile-summary">
+              <h1>Fabio Schirru</h1>
+              <div id="city">
+                <a class="maps" href="https://maps.google.com/?q=Cagliari, Italy"><i class="fas fa-map-marker-alt"></i></a
+                >Cagliari, Italy
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+   </div> 
+  </div> 
+   <br>
+   <!--PROFILE PART2-->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-1">
+        <h4 class="Title1_part2"> % Fuga:</h4>
+        <h1>99,9%</h1>
+        <p class="ratingstars">
+          <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="cursor:pointer;"  class="fa fa-star checked"></span>
+          <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+          <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+          <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+          <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="cursor:pointer;" class="fa fa-star not-checked"></span></p>
+     </div>
+      <div class="col-md-10 col-sm-11">
+        <div class="box_perc">
+          <h4 class="Title1_part2">Descrizione Escaper:</h4>   
+          <p class="description-profile">Tutto bello ed eccitante, se non fosse per quella di captivita e la sua frase "Peccato, vi mancava così poco!"</p>
+     </div> 
+    </div> 
+   </div>
+  </div>
+</section>
+
+   <!--PROFILE PART3-->
+   <section class="profile-tabs">
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-4" id="personal-skills">
+            <hr>
+            <i class="fas fa-star-half-alt" id="icon1"></i>
+             <h4>Skills Personali</h4>
+             <h6>La valutazione degli altri escapers:</h6>
+             <hr>
+            <div><Table align="center">
+               <tr><td width="50%">
+             <p class="ratingstars2">
+               Comunicazione</td>
+               <td width="50%">
+              <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="cursor:pointer;"  class="fa fa-star checked"></span>
+              <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+              <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+              <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+              <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="cursor:pointer;" class="fa fa-star not-checked"></span></p>
+            </td></tr>
+            <tr><td width="50%">
+              <p class="ratingstars2">
+                Lavoro di squadra</td>
+                <td width="50%">
+               <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="cursor:pointer;"  class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="cursor:pointer;" class="fa fa-star checked"></span></p>
+             </td></tr>
+             <tr><td width="50%">
+              <p class="ratingstars2">
+                Problem Solving</td>
+                <td width="50%">
+               <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="cursor:pointer;"  class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="cursor:pointer;" class="fa fa-star checked"></span></p>
+             </td></tr>
+             <tr><td width="50%">
+              <p class="ratingstars2">
+                Decisioni</td>
+                <td width="50%">
+               <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="cursor:pointer;"  class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="cursor:pointer;" class="fa fa-star not-checked"></span></p>
+             </td></tr>
+             <tr><td width="50%">
+              <p class="ratingstars2">
+                Proattività</td>
+                <td width="50%">
+               <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="cursor:pointer;"  class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="cursor:pointer;" class="fa fa-star checked"></span>
+               <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="cursor:pointer;" class="fa fa-star checked"></span></p>
+             </td></tr>
+              </Table>
+            </div> 
+            </div>
+          <div class="col-sm-4" id="teams-joined">
+            <hr>
+            <i class="fas fa-users" id="icon1"></i>
+            <h4>Teams</h4>
+            <h6>Attualmente ho giocato in questi team:</h6>
+            <hr>
+              <h5>Gli amici di Fanari</h5>
+              <h5>Fanari 4Ever</h5>
+              <h5>Quelli di Fanari</h5>
+              <h5>Fanari dov'è?</h5>
+              <h5>I Ciciboys</h5>
+         </div>
+         <div class="col-sm-4" id="rooms-completed">
+           <hr>
+          <i class="fas fa-unlock-alt" id="icon1"></i>
+          <h4>Rooms</h4> 
+          <h6>Ecco le room dove ho partecipato:</h6>
+          <hr>
+          <div class="tablerooms"><Table align="center">
+            <th width="60%">Room</th>
+            <th width="20%">Tempo</th>
+            <th width="20%">Completata</th>
+            <tr><td width="60%">
+              <h6>Paranoia</h6></td>
+              <td width="20%">
+              <h6>00:59</h6></td>
+              <td width="20%">
+              <h6 class="check">SI</h6></td>
+              </tr>
+              <tr><td width="60%">
+                <h6>Bunker</h6></td>
+                <td width="20%">
+                <h6>00:47</h6></td>
+                <td width="20%">
+                <h6>SI</h6></td>
+                </tr>
+                <tr><td width="60%">
+                  <h6>Sacrificium</h6></td>
+                  <td width="20%">
+                  <h6>--:--</h6></td>
+                  <td width="20%">
+                  <h6>NO</h6></td>
+                  </tr>
+                  <tr><td width="60%">
+                    <h6>La macchina del tempo</h6></td>
+                    <td width="20%">
+                    <h6>00:54</h6></td>
+                    <td width="20%">
+                    <h6>SI</h6></td>
+                    </tr>
+                    <tr><td width="60%">
+                      <h6>Quantico</h6></td>
+                      <td width="20%">
+                      <h6>00:57</h6></td>
+                      <td width="20%">
+                      <h6>SI</h6></td>
+                      </tr>
+                      <tr><td width="60%">
+                        <h6>Emporium</h6></td>
+                        <td width="20%">
+                        <h6>00:45</h6></td>
+                        <td width="20%">
+                        <h6>SI</h6></td>
+                        </tr>
+                        <tr><td width="60%">
+                          <h6>Bloody Face</h6></td>
+                          <td width="20%">
+                          <h6>00:46</h6></td>
+                          <td width="20%">
+                          <h6>SI</h6></td>
+                          </tr>
+                          <tr><td width="60%">
+                            <h6>Scary Office</h6></td>
+                            <td width="20%">
+                            <h6>00:34</h6></td>
+                            <td width="20%">
+                            <h6>SI</h6></td>
+                            </tr>
+                            <tr><td width="60%">
+                              <h6>Ghost Busters</h6></td>
+                              <td width="20%">
+                              <h6>00:38</h6></td>
+                              <td width="20%">
+                              <h6>SI</h6></td>
+                              </tr>
+                              <tr><td width="60%">
+                                <h6>Dracula</h6></td>
+                                <td width="20%">
+                                <h6>00:46</h6></td>
+                                <td width="20%">
+                                <h6>SI</h6></td>
+                                </tr>
+                                <tr><td width="60%">
+                                  <h6>Prison Break</h6></td>
+                                  <td width="20%">
+                                  <h6>00:46</h6></td>
+                                  <td width="20%">
+                                  <h6>SI</h6></td>
+                                  </tr>
+
+          </table>
+       </div>
+      </div> 
+     </div> 
+  </section>
+   
+  <section class="end-profile">
+  </section>
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <p>Escape! &copy; 2020 - All rights reserved</p>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
