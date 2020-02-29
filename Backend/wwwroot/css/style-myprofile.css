@@ -1,0 +1,217 @@
+/*BODY*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(../img/sfondo2.jpg);
+    margin-top: 52px;
+}
+
+/*NAVBAR*/
+.navbar-dark .navbar-nav .nav-link {
+    display: block;
+    color: #fff;
+    padding: 12px;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #ff5722;
+    background: #222;     
+}
+.navbar-nav:hover .nav-link:hover {
+    color: #ff5722;
+    background: #222;
+}
+.dropdown-item:hover {
+    color: #ff5722;
+    background: #222;   
+}
+.navbar-dark {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar i {
+    padding: 6px;
+    padding-left: 0;
+}
+
+/*CREATE MATCH*/
+.modal-content {
+    background: url(../img/sfondo2.jpg);
+}
+
+/*CREATE TEAM*/
+.modal-content {
+    background: url(../img/sfondo2.jpg);
+}
+
+.btn-outline-orange2 {
+    color: #222;
+    border-color: #ff5722;
+    border-width: 2px;
+}
+.btn-outline-orange2:hover {
+    color: #222;
+    border-color: #ff5722;
+    background-color: #ff5722;
+}
+
+/*PROFILE PART1*/
+.overview-profile {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    background: url(../img/sfondo.jpg);
+    border-bottom: 5px solid #000;
+}
+#header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#header .profile-summary {
+    padding:15px;
+    flex: 1;
+}
+#header .profile-summary h1 {
+    margin: 0;
+}
+#header .profile-pic {
+    width: 150px;
+    height: 150px;
+    background: url(../img/fabio.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: inset -4px -4px 16px rgba(0,0,0,0.7);
+}
+#city {
+color: #999;
+font-weight: bold;
+}
+#city a{
+    flex:1;
+    padding: 8px 1px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+i.fas {
+    margin-right: 3px;
+}
+i.fas:hover {
+    color: #fff
+}
+i.fab {
+    margin-right: 3px;
+}
+i.fab:hover {
+    color: #fff
+}
+         
+.section-head2 {
+    display: inline-block;
+    width: 100px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    margin: 10px 0 0 8px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+    text-align: center;
+    border: 0.5px black solid;
+    color: #ff6b3d;
+    background: #333;
+    font-size: small;
+}
+.container h1 {
+    color: #fff;
+}
+.container i.fas {
+    margin-right: 3px;
+    color: #999;
+}
+.container i.fas:hover {
+    margin-right: 3px;
+    color: #fff;
+}
+/*PROFILE PART2*/
+.col-md-2 .Title1_part2 {
+    text-align: center;
+    color: #fff;
+}
+.col-md-10 .Title1_part2 {
+    color: #fff;
+}
+.col-md-10 .description-profile {
+    color: #222;
+    font-weight: bold;
+    text-align: justify;
+    background: url(../img/sfondo2.jpg);
+    border: 1px solid #000;
+    height: 90px;
+}
+.col-md-2 h1 {
+    text-align: center;
+    color: rgb(10, 175, 10);
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+/*PROFILE PART3*/
+.profile-tabs {
+    position: relative;
+    min-height: 10vh;
+    padding: 10px 0 10px;
+    text-align: center;
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+}
+#teams-joined {
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+}
+.profile-tabs i {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 20%;
+    background-color: #ff5722;
+    color: #222;
+}
+#icon1 {
+    color: #222;
+}
+
+/*PROFILE PART3 RATING*/
+.checked {
+    color: rgb(214, 182, 0);
+}
+.not-checked {
+    color: #777;
+}
+.ratingstars {
+    text-align: center;
+}
+.ratingstars2 {
+    text-align: justify;
+}
+
+
+.tablerooms th {
+    border-bottom: 1px solid #222;
+}
+.end-profile {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    background: url(../img/sfondo.jpg);
+    border-top: 5px solid #000;
+}
+
+/*FOOTER*/
+#footer {
+    background: #333;
+    padding: 7px;
+    color: white;
+    text-align: center;
+    height: 38px;
+}

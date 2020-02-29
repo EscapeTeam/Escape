@@ -1,0 +1,217 @@
+
+/*BODY*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top right, #999, #fff);
+    margin-top: 40px;
+}
+.medium-padding {
+    padding: 50px 0 0 0;
+}
+.big-padding {
+    padding: 80px 0 0 0;
+}
+/*NAVBAR*/
+.navbar-dark .navbar-nav .nav-link {
+    display: block;
+    color: #fff;
+    padding: 12px;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #ff5722;
+    background: #222;     
+}
+.navbar-nav:hover .nav-link:hover {
+    color: #ff5722;
+    background: #222;
+}
+.dropdown-item:hover {
+    color: #ff5722;
+    background: #222;   
+}
+.navbar-dark {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar i {
+    padding: 6px;
+    padding-left: 0;
+}
+/*SECTION1*/
+.main {
+    position: relative;
+    background: url(../img/01-escape-room-the-cube-2.jpg);
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 120px;
+}
+.main h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #fff;
+}
+.main p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #fff;
+}
+.main .btn {
+    background: #999;
+    color: #000;
+    border-radius: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main:hover .btn:hover {
+    background: #ff6b3d;
+    color: #222;
+}
+.color-primary {
+    color: #ff6b3d;
+    font-size: 50px;
+}
+@media(max-width: 768px) {
+.main {
+    padding: 200px 0;
+}
+.main h2 {
+    font-size: 2em;
+}
+.main input {
+    size: 50%;
+}
+}
+
+/*SECTION2*/
+.about {
+    position: relative;
+    background: #000;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0 80px;
+} 
+.about h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+}
+.about p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #fff;
+}
+.about .col-sm-7 .btn {
+    background: #999;
+    color: #000;
+    border-radius: 1;
+    border: none;
+}
+.container .read {
+    text-align: center;
+}
+.about .col-sm-5 {
+    background-image: url(../img/escape-room-magenta-key.jpg);
+    background-size: cover;
+}
+.about:hover .btn:hover {
+    background: #ff6b3d;
+    color: #222;
+}
+@media(max-width: 768px) {
+    .about {
+        padding: 200px 0;
+    }
+    .about h1 {
+        font-size: 2em;
+    }
+    .about input {
+        size: 50%;
+    }
+    }
+
+/*SECTION3*/
+.social1 {
+    position: relative;
+    min-height: 10vh;
+    padding: 40px 0 40px;
+    text-align: center;
+}
+.social1 i {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #ff5722;
+    color: #222;
+}
+.social2 {
+    position: relative;
+    background: url(../img/sfondo.jpg);
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 50px;
+}
+.social2 h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    color: #fff;
+}
+.social2 p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 1em;
+    color: #fff;
+}
+.social2 .btn {
+    background: #999;
+    color: #000;
+    border-radius: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.social2:hover .btn:hover {
+    background: #ff6b3d;
+    color: #222;
+}
+
+/*SECTION4*/
+.contacts h3, h6 {
+    text-align: center;
+}
+.card-body h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+.card-body h5 {
+    font-size: 16px;
+    color: #ff6b3d;
+    background: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cards img {
+    border-radius: 20%;
+    width: 150px;
+}
+
+/*FOOTER*/
+#footer {
+    background: #333;
+    padding: 7px;
+    color: white;
+    text-align: center;
+    height: 38px;
+}
