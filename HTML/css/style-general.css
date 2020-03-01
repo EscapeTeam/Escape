@@ -1,0 +1,80 @@
+/*BODY*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(../img/sfondo2.jpg);
+    margin-top: 52px;
+}
+
+/*NAVBAR*/
+.navbar-dark .navbar-nav .nav-link {
+    display: block;
+    color: #fff;
+    padding: 12px;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #ff5722;
+    background: #222;     
+}
+.navbar-nav:hover .nav-link:hover {
+    color: #ff5722;
+    background: #222;
+}
+.dropdown-item:hover {
+    color: #ff5722;
+    background: #222;   
+}
+.navbar-dark {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar i {
+    padding: 6px;
+    padding-left: 0;
+}
+
+/*NAVBAR ICONS*/
+i.fas {
+    margin-right: 3px;
+}
+i.fas:hover {
+    color: #fff
+}
+i.fab {
+    margin-right: 3px;
+}
+i.fab:hover {
+    color: #fff
+}
+
+/*CREATE MATCH*/
+.modal-content {
+    background: url(../img/sfondo2.jpg);
+}
+
+/*CREATE TEAM*/
+.modal-content {
+    background: url(../img/sfondo2.jpg);
+}
+
+/*CREATE BUTTON*/
+.btn-outline-orange2 {
+    color: #222;
+    border-color: #ff5722;
+    border-width: 2px;
+}
+.btn-outline-orange2:hover {
+    color: #222;
+    border-color: #ff5722;
+    background-color: #ff5722;
+}
+
+/*FOOTER*/
+#footer {
+    background: #333;
+    padding: 7px;
+    color: white;
+    text-align: center;
+    height: 38px;
+}
